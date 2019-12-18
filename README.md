@@ -1,9 +1,6 @@
 # transo
 A Simple twitter bot to translate tweet from English to any language supported by Google Translate.
 
-## Usage
-Just retweet a tweet with @appwithtech translate to language e.g. @appwithtech translate to French
-
 ## Setup
 1. Pull the Repo
 2. pip install requirements.txt
@@ -22,3 +19,14 @@ Just retweet a tweet with @appwithtech translate to language e.g. @appwithtech t
     ```
     export GOOGLE_APPLICATION_CREDENTIALS='~/.myKeys/Transo.json'
     ```
+
+## Execution & Usage
+1. Run the app in a perpetual while loop or cron or any scheduler of your choice
+   ``` python transo_engine.py```
+
+2. Go to your twitter account select a tweet, retweet it by prefixing 
+   ``` 
+      @appwithtech translate to <your target language>
+      e.g. @appwith tech translate to French
+   ```
+3. If the app is running correctly, you would recieve the translated tweet as a reply.
