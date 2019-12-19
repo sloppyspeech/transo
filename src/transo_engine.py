@@ -85,6 +85,7 @@ def post_reply(api,mentions):
     source_language='en'
 
     for i in range(0,len(mentions)):
+        # Set Default target language
         target_language='hi'
         mention=mentions[i]
         log.debug(mention)
